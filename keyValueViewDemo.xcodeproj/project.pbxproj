@@ -14,6 +14,8 @@
 		9635C5E21B51183400E8C4F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9635C5E11B51183400E8C4F0 /* Images.xcassets */; };
 		9635C5E51B51183400E8C4F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9635C5E31B51183400E8C4F0 /* LaunchScreen.xib */; };
 		9635C5F11B51183400E8C4F0 /* keyValueViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9635C5F01B51183400E8C4F0 /* keyValueViewDemoTests.m */; };
+		9635C5FD1B5118B000E8C4F0 /* DZTKeyValueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9635C5FC1B5118B000E8C4F0 /* DZTKeyValueView.m */; };
+		DA880F271E67506D03432155 /* libPods-keyValueViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53DC48F7FCAC802E32503E /* libPods-keyValueViewDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E5D9C7407194EA6493EB2AC /* Pods-keyValueViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keyValueViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-keyValueViewDemo/Pods-keyValueViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9635C5D11B51183400E8C4F0 /* keyValueViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keyValueViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9635C5D51B51183400E8C4F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9635C5D61B51183400E8C4F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,10 @@
 		9635C5EA1B51183400E8C4F0 /* keyValueViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = keyValueViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9635C5EF1B51183400E8C4F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9635C5F01B51183400E8C4F0 /* keyValueViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = keyValueViewDemoTests.m; sourceTree = "<group>"; };
+		9635C5FB1B5118B000E8C4F0 /* DZTKeyValueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZTKeyValueView.h; sourceTree = "<group>"; };
+		9635C5FC1B5118B000E8C4F0 /* DZTKeyValueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZTKeyValueView.m; sourceTree = "<group>"; };
+		E6111503F7FE4FFC7C5ADA84 /* Pods-keyValueViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keyValueViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-keyValueViewDemo/Pods-keyValueViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FF53DC48F7FCAC802E32503E /* libPods-keyValueViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keyValueViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA880F271E67506D03432155 /* libPods-keyValueViewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +74,8 @@
 				9635C5D31B51183400E8C4F0 /* keyValueViewDemo */,
 				9635C5ED1B51183400E8C4F0 /* keyValueViewDemoTests */,
 				9635C5D21B51183400E8C4F0 /* Products */,
+				990D022C576EA7BF85167994 /* Pods */,
+				B9129BCCAFF43A407FD20708 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +91,7 @@
 		9635C5D31B51183400E8C4F0 /* keyValueViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9635C5FA1B5118B000E8C4F0 /* DZTKeyValueView */,
 				9635C5D81B51183400E8C4F0 /* AppDelegate.h */,
 				9635C5D91B51183400E8C4F0 /* AppDelegate.m */,
 				9635C5DB1B51183400E8C4F0 /* ViewController.h */,
@@ -119,6 +130,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9635C5FA1B5118B000E8C4F0 /* DZTKeyValueView */ = {
+			isa = PBXGroup;
+			children = (
+				9635C5FB1B5118B000E8C4F0 /* DZTKeyValueView.h */,
+				9635C5FC1B5118B000E8C4F0 /* DZTKeyValueView.m */,
+			);
+			path = DZTKeyValueView;
+			sourceTree = "<group>";
+		};
+		990D022C576EA7BF85167994 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6111503F7FE4FFC7C5ADA84 /* Pods-keyValueViewDemo.debug.xcconfig */,
+				5E5D9C7407194EA6493EB2AC /* Pods-keyValueViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9129BCCAFF43A407FD20708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF53DC48F7FCAC802E32503E /* libPods-keyValueViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9635C5F41B51183400E8C4F0 /* Build configuration list for PBXNativeTarget "keyValueViewDemo" */;
 			buildPhases = (
+				E50C007E8F7A5F5189AF7089 /* Check Pods Manifest.lock */,
 				9635C5CD1B51183400E8C4F0 /* Sources */,
 				9635C5CE1B51183400E8C4F0 /* Frameworks */,
 				9635C5CF1B51183400E8C4F0 /* Resources */,
+				2F85F6FE0EC855EA4C88CE6B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +253,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F85F6FE0EC855EA4C88CE6B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-keyValueViewDemo/Pods-keyValueViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E50C007E8F7A5F5189AF7089 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9635C5CD1B51183400E8C4F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -222,6 +294,7 @@
 				9635C5DD1B51183400E8C4F0 /* ViewController.m in Sources */,
 				9635C5DA1B51183400E8C4F0 /* AppDelegate.m in Sources */,
 				9635C5D71B51183400E8C4F0 /* main.m in Sources */,
+				9635C5FD1B5118B000E8C4F0 /* DZTKeyValueView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +418,11 @@
 		};
 		9635C5F51B51183400E8C4F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6111503F7FE4FFC7C5ADA84 /* Pods-keyValueViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = keyValueViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,9 +430,11 @@
 		};
 		9635C5F61B51183400E8C4F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E5D9C7407194EA6493EB2AC /* Pods-keyValueViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = keyValueViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +493,7 @@
 				9635C5F61B51183400E8C4F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9635C5F71B51183400E8C4F0 /* Build configuration list for PBXNativeTarget "keyValueViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +502,7 @@
 				9635C5F91B51183400E8C4F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
